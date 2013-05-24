@@ -6,15 +6,23 @@ body{
 	overflow-y:auto;
 	}
 html{
-	background: url(../images/fnd.jpg) no-repeat center center fixed; 
+	/*background: url(../images/fnd.jpg) no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
-  	background-size: cover;
+  	background-size: cover;*/
 	overflow-x:hidden;
 	overflow-y:auto;
 }
-
+#cont_img{
+		margin:0;
+	    padding:0;
+	    position:absolute;
+	    z-index:0;
+	    width:100%;
+	    height:100%;
+	    top:0;
+}
  #ticker {
 	 
         height: 115px;
@@ -40,6 +48,7 @@ html{
 	position:absolute;
 	bottom:0;
 	overflow-x:hidden;
+	z-index:999;
 }
 #abajo-top{
 	background:url(../images/fnd-abajo-top.gif) repeat-x; 
