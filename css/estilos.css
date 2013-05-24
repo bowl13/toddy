@@ -138,13 +138,14 @@ html{
 	background-position: 0 -52px;
 	}
 #botonera-abajo{
-	margin:15px 0 0 50%;
+	/*margin:15px 0 0 50%;*/
+	margin:15px auto 0 auto;
 	width:1024px;
 	display:block;
 	}
-#botonera-abajo .abajo2{
+/*#botonera-abajo .abajo2{
 	margin:0 0 0 -502px;
-	}
+	}*/
 #prod-1 img{
 	margin:22px 0 0 2px;
 	}
