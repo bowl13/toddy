@@ -14,7 +14,7 @@ html{
 	overflow-x:hidden;
 	overflow-y:auto;
 }
-#cont_img{
+#cont_img, #cont_img img{
 		margin:0;
 	    padding:0;
 	    position:absolute;

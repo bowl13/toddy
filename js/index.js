@@ -14,7 +14,7 @@ jQuery(document).ready(function($) {
 		centermarkers : false
     });
 	
-	/*if($(window).height() <= 697){
+	if($(window).height() <= 697){
 			$('#contenido').css('position', 'relative');
 		}else{
 			$('#contenido').css('position', 'absolute');
@@ -26,16 +26,8 @@ jQuery(document).ready(function($) {
 		}else{
 			$('#contenido').css('position', 'absolute');
 		}
-	});*/
-	
-	$(window).resize(function(){
-		var bgwidth = $(window).width(),bgheight = $(window).height();
-	    
-    	$('#cont_img').attr({
-    		width:bgwidth,
-    		height:bgheight
-		});
 	});
+	
 	
 	$("#ticker").tweet({
           username: "toddy_cl",
