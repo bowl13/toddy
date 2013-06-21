@@ -68,7 +68,7 @@
 										
 										<div class="row-fluid">
 
-											<div class="span4">
+											<div class="span6">
 												
 												<div class="control-group">
 											
@@ -137,6 +137,7 @@
 													
 												</div>
 												
+													
 												<div class="control-group">
 
 													<label class="control-label" for="inputRegion">region</label>
@@ -149,45 +150,39 @@
 													</div>
 													
 												</div>
+											
+												<div class="control-group">
 
-											</div>
-												
-												<div class="span4">
-												
-													<div class="control-group">
-
-														<label class="control-label" for="inputDato">nº boleta</label>
-														<div class="controls">
-															<input type="text" placeholder="xxxxxx">
-														</div>
-
+													<label class="control-label" for="inputDato">nº boleta</label>
+													<div class="controls">
+														<input type="text" placeholder="xxxxxx">
 													</div>
-
-													<p>Términos y condiciones La información entregada es de uso exclusivo de Evercrisp S.A. Tus datos serán tratados de forma confidencial y bajo ningún motivo serán utilizados con fines ajenos a la promoción, ni entregados a terceros.</p>
-													
-													<div class="control-group">
-
-														<div class="controls">
-															<laber class="checkbox control-label">
-															<input type="checkbox">
-																Declaro ser mayor de 18 años y <a href="">acepto las bases de inscripción.</a>
-															</laber>
-														</div>
-														
-													</div>
-													
-													<div class="control-group">
-
-														<div class="controls">
-															<input type="submit">	
-														</div>
-														
-													</div>
-
-													<p>Promoción valida desde el 27 de Junio al 27 de Agosto del 2013. Bases en notaría Musalem.</p>
 
 												</div>
-											
+
+												<p>Términos y condiciones La información entregada es de uso exclusivo de Evercrisp S.A. Tus datos serán tratados de forma confidencial y bajo ningún motivo serán utilizados con fines ajenos a la promoción, ni entregados a terceros.</p>
+												
+												<div class="control-group">
+
+													<div class="controls">
+														<laber class="checkbox control-label">
+														<input type="checkbox">
+															Declaro ser mayor de 18 años y <a href="">acepto las bases de inscripción.</a>
+														</laber>
+													</div>
+													
+												</div>
+												
+												<div class="control-group">
+
+													<div class="controls">
+														<input type="submit">	
+													</div>
+													
+												</div>
+
+												<p>Promoción valida desde el 27 de Junio al 27 de Agosto del 2013. Bases en notaría Musalem.</p>
+												
 										</div>
 										
 									</fildset>

@@ -67,7 +67,7 @@ body{
     -moz-box-shadow: inset 0px 0px 200px #4e686e;
     box-shadow: inset 0px 0px 200px #4e686e;
     max-width: 788px !important;
-    margin: 300px auto;
+    margin: 300px auto 20px;
     z-index: 9;
     position: relative;
 }
