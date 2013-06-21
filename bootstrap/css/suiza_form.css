@@ -1,5 +1,14 @@
 body{
 	background-color: #ffd;
+    background-image: url('../../images/bg-suiza.jpg');
+    background-position: center 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/bg-suiza.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/bg-suiza.jpg', sizingMethod='scale')"; 
+}
+.container-fluid{
+    padding: 0 !important;
 }
 #wrap{
 	min-height:100%;
@@ -22,4 +31,57 @@ body{
   	background-color: #016;
     font-size: 10px;
     color:#fff;
+}
+
+/*sty header*/
+.headers{
+    position: relative;;
+    z-index: 9;
+}
+.tit-suiza{
+    margin: 80px 0;
+}
+.bg-w{
+    background-color: rgba(255,255,255,.5);
+    position: relative;
+    z-index: 1;
+    max-width: 920px;
+    margin: 0 auto;
+    margin-top:-60px;
+    padding-top: 100px;
+}
+.bg-w p{
+    max-width:700px;
+    color: #003333;
+    font-family: Arial Black, Sans-Serif;
+    font-size: 20px;
+    margin: 0 auto;
+}
+.content{
+    margin-top:80px;
+}
+.cont-form{
+    background-color: #669999;
+    border: 4px solid #669999;
+    --webkit-box-shadow: inset 0px 0px 200px #4e686e;
+    -moz-box-shadow: inset 0px 0px 200px #4e686e;
+    box-shadow: inset 0px 0px 200px #4e686e;
+    max-width: 788px !important;
+    margin: 300px auto;
+    z-index: 9;
+    position: relative;
+}
+.cont-form p{
+    font-size: 10px;
+    color: #fff;
+    line-height: 12px;
+}
+.baca{
+    position: absolute;
+    z-index: 1;
+    margin-top: 40px;
+}
+/*old styles*/
+#botonera_int{
+    position: absolute !important;
 }

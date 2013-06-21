@@ -42,93 +42,139 @@
 
 	<!--cont form-->
 	<div class="container-fluid" id="wrap">
-		
-			<div class="row-fluid">
-		
-				<div class="span6 offset3">header</div>
-		
+			
+		<div class="row-fluid headers">
+			
+			<div class="span12 tit-suiza text-center">
+			
+				<img src="images/tit_suiza.gif" alt="Gana un viaje Suiza">
+
 			</div>
 
-			<div class="row-fluid">
-				<div class="span6 offset3">
+		</div>
+				
+		<div class="row-fluid">
+				
+				<div class="span10 text-center" style="margin:0 auto;">
 					
-					<form action="">
-						<fildset>
-							<div class="control-group">
-								<label class="control-label" for="inputnombre">NOMBRE</label>
-								<div class="controls">
-									<input type="text" id="inputEmail" placeholder="nombre">
-								</div>
-							</div>
-							
-							<div class="control-group">
-								<label class="control-label" for="inputRut">rut</label>
-								<div class="controls"><input type="text" placeholder="Rut"></div>
-								
-							</div>
-							
-							<div class="control-group">
-								<label class="control-label" for="inputMail">e-mail</label>
-								<div class="controls"><input type="text" placeholder="Email"></div>
-								
-							</div>
-							
-							<div class="control-group">
-								<label class="control-label" for="inputNac">fecha de nacimieneto</label>
-								<div class="controls"><input type="text" placeholder="Fecha de Nacimiento"></div>
-								
-							</div>
-							
-							<div class="control-group">
-								<label class="contrl-label" for="inputTelefono">telefono</label>
-								<div class="controls"><input type="text" placeholder="telefono"></div>
-								
-							</div>
-							
-							<div class="control-group">
-								<label class="control-label" for="inputDirec">direccion</label>
-								<div class="controls"><input type="text" placeholder="Direccion"></div>
-								
-							</div>
-							
-							<div class="control-group">
-								<label class="control-label" for="inputComuna">comuna</label>
-								<div class="controls"><input type="text" placeholder="Comuna"></div>
-								
-							</div>
-							
-							<div class="control-group">
-								<label class="control-label" for="inputRegion">region</label>
-								<div class="controls"><input type="text" placeholder="Region"></div>
-								
-							</div>
-							
-							<div class="control-group">
-								<label class="control-label" for="inputDato">dato</label>
-								<div class="controls"><input type="text" placeholder="dato"></div>
-
-							</div>
-
-							<div class="control-group">
-								<div class="controls">
-									<laber class="checkbox control-label">
-									<input type="checkbox">
-										soy mayor de 18 años
-									</laber>
+					<div class="container-fluid bg-w">
+					
+					<p>Suiza está muy cerca, sólo debes llenar este formulario para participar por el viaje para 2 personas. Ingresa todos los datos y el número de tu boleta de supermercados Jumbo.</p>
+					
+					<div class="span12">
+					
+						<form action="">
+							<fildset>
+								<div class="control-group">
+									
+									<label class="control-label" for="inputnombre">NOMBRE</label>
+									<div class="controls">
+										<input type="text" id="inputEmail" placeholder="nombre">
+									</div>
 								</div>
 								
-							</div>
-							
-							<div class="control-group">
-								<input type="submit">
-							</div>
+								<div class="control-group">
 
-						</fildset>
-					</form>
+									<label class="control-label" for="inputRut">rut</label>
+									<div class="controls">
+										<input type="text" placeholder="Rut">
+									</div>
+									
+								</div>
+								
+								<div class="control-group">
+
+									<label class="control-label" for="inputMail">e-mail</label>
+									<div class="controls">
+										<input type="text" placeholder="Email">
+									</div>
+									
+								</div>
+								
+								<div class="control-group">
+
+									<label class="control-label" for="inputNac">fecha de nacimieneto</label>
+									<div class="controls">
+										<input type="text" placeholder="Fecha de Nacimiento">
+									</div>
+									
+								</div>
+								
+								<div class="control-group">
+
+									<label class="contrl-label" for="inputTelefono">telefono</label>
+									<div class="controls">
+										<input type="text" placeholder="telefono">
+									</div>
+									
+								</div>
+								
+								<div class="control-group">
+
+									<label class="control-label" for="inputDirec">direccion</label>
+									<div class="controls">
+										<input type="text" placeholder="Direccion">
+									</div>
+									
+								</div>
+								
+								<div class="control-group">
+
+									<label class="control-label" for="inputComuna">comuna</label>
+									<div class="controls">
+										<input type="text" placeholder="Comuna">
+									</div>
+									
+								</div>
+								
+								<div class="control-group">
+
+									<label class="control-label" for="inputRegion">region</label>
+									<div class="controls">
+										<input type="text" placeholder="Region">
+									</div>
+									
+								</div>
+								
+								<div class="control-group">
+
+									<label class="control-label" for="inputDato">dato</label>
+									<div class="controls">
+										<input type="text" placeholder="dato">
+									</div>
+
+								</div>
+
+								<div class="control-group">
+
+									<div class="controls">
+										<laber class="checkbox control-label">
+										<input type="checkbox">
+											soy mayor de 18 años
+										</laber>
+									</div>
+									
+								</div>
+								
+								<div class="control-group">
+
+									<div class="controls">
+										<input type="submit">	
+									</div>
+									
+								</div>
+
+							</fildset>
+						</form>
+
+					</div>
 
 				</div>
-			</div>
 
+				</div>
+
+		</div>
+			
 		<div class="push"></div>
 
 	</div>
