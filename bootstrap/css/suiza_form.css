@@ -46,10 +46,14 @@ body{
     position: relative;
     z-index: 1;
     max-width: 920px;
-    width:100%;
+    width:85%;
     margin: 0 auto;
     margin-top:-60px;
     padding-top: 100px;
+}
+.bg-w h1{
+    color:#003333; 
+    -text-shadow: 1px 0 #ffd;
 }
 .bg-w p{
     max-width:700px;
@@ -64,7 +68,7 @@ body{
 .cont-form{
     background-color: #669999;
     border: 4px solid #669999;
-    --webkit-box-shadow: inset 0px 0px 200px #4e686e;
+    -webkit-box-shadow: inset 0px 0px 200px #4e686e;
     -moz-box-shadow: inset 0px 0px 200px #4e686e;
     box-shadow: inset 0px 0px 200px #4e686e;
     max-width: 788px !important;
@@ -101,6 +105,47 @@ body{
     width:80% !important;
     height: 50px;
 }
+.cont-form2{
+    background-color: #669999;
+    border: 4px solid #669999;
+    -webkit-box-shadow: inset 0px 0px 200px #4e686e;
+    -moz-box-shadow: inset 0px 0px 200px #4e686e;
+    box-shadow: inset 0px 0px 200px #4e686e;
+    max-width: 788px !important;
+    margin: 0 auto;
+    z-index: 9;
+    margin-bottom: 100px;
+}
+.cont-form2 label{
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Arial Black, Sans-Serif;
+    height: 30px;
+    margin-bottom: 10px;
+    width: 30%;
+}
+.cont-form2 input, .cont-form select{
+    width:231px;
+    -webkit-box-shadow: inset 0 0 3px #000;
+    -moz-box-shadow: inset 0 0 3px #000;
+    box-shadow: inset 0 0 3px #000;
+    border:none;
+}
+.cont-form2 p{
+    font-size: 10px;
+    color: #fff;
+    line-height: 12px;
+}
+.cont-form2 .check{
+    width:20px !important;
+    height: 20px;
+}
+.cont-form2 .checkbox{
+    width:80% !important;
+    height: 50px;
+}
+
 .btn_parti{
     width:;
     border:3px solid #ffd !important;
@@ -124,10 +169,33 @@ body{
 .cont2{
     float:left;max-width:350px;width:100%;margin-left:20px;
 }
-@media (max-width: 768px){
-    .cont2{margin-left:0 !important;}
+.cont-form .error, .cont-form2 .error{
+    margin:0 auto 10px;
+    border:2px solid #ff3333;
+    width:50%;
+    background-color: #ffd;
+    color: #ff3333;
+    text-transform: uppercase;
 }
-.baca{
+@media (max-width: 768px){
+    .bg-w{
+        width:100% !important;
+    }
+    .cont2{
+        margin-left:0 !important;
+    }
+    .cont-form2 .cont1{
+        width:350px;
+    }
+    .cont-form2 .cont2{
+        width:320px;
+        margin-left:10px !important;
+    }
+     .fix_phone img{ 
+        margin-left: -10px !important;
+    }
+}
+.vaca{
     position: absolute;
     z-index: 1;
     background-image: url('../../images/baca_toddy.gif');
@@ -136,12 +204,36 @@ body{
     width: 613px;
 }
 @media (max-width:640px){
-    .baca img{
-        margin-left:-100px;
-    }
     .cont-form{
         margin-top: 230px;
         width:300px;
+    }
+    .cont-form2{
+        width:300px;
+    }
+     .vaca{
+        background-position:top -100px;
+    }
+    .fix_phone{
+        margin-top:10px !important;
+        text-align: center !important;
+    }
+    .fix-align{
+        text-align: center !important;
+    }
+     .fix_phone #vaca{
+        width:300px;
+    }
+    .cont-form2 .cont1{
+        width:300px;
+    }
+    .cont-form2 .cont2{
+        width:280px;
+        margin-left:0 !important;
+    }
+    #legal{
+        width:230px !important;
+        margin-right: 10px;
     }
 }
 /*old styles*/

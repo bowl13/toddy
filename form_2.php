@@ -18,54 +18,63 @@
 	<link rel="stylesheet" href="css/internas.css">
 
 </head>
-<body style="overflow:hidden">
+<body>
 	<div class="container-fluid">
 		
-		<!--botonera toddy-->
-	<div id="botonera_int">
-		<div id="navegacion_int">
-			<div id="mover">
-				<a href="index.html">
-					<img border="0" src="images/logo-int-trans.png" style="filter:progid:DXImageTransform.Microsoft.AlphaImageLoader (src='imgaes/logo-int-trans',sizingMethod='scale');" />
-				</a>
-				<a href="productos.html" id="btn1"></a>
-				<a href="juegos.html" id="btn2"></a>
-				<a href="comics.html" id="btn3"></a>
-				<div id="share">
-					<a href="http://twitter.com/toddy_cl" target="_blank" id="share1"></a>
-					<a href="http://www.facebook.com/ToddyChile" target="_blank" id="share2"></a>
-					<a href="http://www.youtube.com/user/toddychile?feature=watch" target="_blank" id="share3"></a>
+	<!--botonera toddy-->
+		<div id="botonera_int">
+			<div id="navegacion_int">
+				<div id="mover">
+					<a href="index.html">
+						<img border="0" src="images/logo-int-trans.png" style="filter:progid:DXImageTransform.Microsoft.AlphaImageLoader (src='imgaes/logo-int-trans',sizingMethod='scale');" />
+					</a>
+					<a href="productos.html" id="btn1"></a>
+					<a href="juegos.html" id="btn2"></a>
+					<a href="comics.html" id="btn3"></a>
+					<div id="share">
+						<a href="http://twitter.com/toddy_cl" target="_blank" id="share1"></a>
+						<a href="http://www.facebook.com/ToddyChile" target="_blank" id="share2"></a>
+						<a href="http://www.youtube.com/user/toddychile?feature=watch" target="_blank" id="share3"></a>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-
-	<div class="row-fluid" style="margin-top:80px;">
-			
-		<div class="span12 text-center">
-			
-			<img class="headers" src="images/tit_suiza.gif" alt="Gana un viaje Suiza">
-			
-			<div class="row-fluid bg-w">
+		<div class="row-fluid" style="margin-top:80px;">
+			<div class="span12 text-center">
 				
-				<div class="span12">
+				<img class="headers" src="images/tit_suiza.gif" alt="Gana un viaje Suiza">
+
+			</div>
+			
+		</div>
+		<div class="row-fluid bg-w">
+		
+
+				<div class="span12 pull-left text-right fix-align" style="text-transform:uppercase;">
+
+					<p style="font-size:19px">Suiza está muy cerca, sólo debes</p>
+					<p style="font-size:21px">comprar Toddy pa’ la leche en</p>
+					<p>
 						
-					<p style="margin-bottom:20px; text-transform:uppercase;">Suiza está muy cerca, sólo debes comprar Toddy pa’ la leche en <img src="images/txt_des.gif"/>, llenar este formulario y ya estarás  participando por un viaje para 2 personas!</p>
+						<img src="images/desta_tit.gif" alt="">,
+
+					</p>
+					<p style="font-size:17px"> llenar este formulario y ya estarás</p>
+					<p style="font-size:24px;">participando por un viaje</p>
+					<p style="font-size:16px"> para 2 personas!</p>
+
 
 				</div>
-				<div style="clear:both;"></div>
-
-				<div class="vaca">
+				<div class="span11 fix_phone" style="margin-top:-150px;">
 					
+					<img id="vaca" src="images/toddy_less.gif" alt="" style="margin-left:30px;">
 
-				</div>
-				
-				<div class="row-fluid cont-form text-left well-small">
+					<div class="row-fluid cont-form2 text-left well-small">
 					
 					<form action="">
 						
-						<div class="error text-center hide well-small">
+						<div class="error text-center well-small hide">
 							No seai pollo, revisa los campos en rojo.
 						</div>
 
@@ -188,27 +197,24 @@
 								
 							</div>
 
-							<p style="max-width:270px;padding:15px 0;" class="pull-left">Promoción valida desde el 27 de Junio al 27 de Agosto del 2013. Bases en notaría Musalem.</p>
-							<p class="pull-left">
+							<p id="legal" style="max-width:270px;padding:15px 0;" class="pull-left">Promoción valida desde el 27 de Junio al 27 de Agosto del 2013. Bases en notaría Musalem.</p>
+							<div class="pull-left">
 								
 								<img style="margin-left:4px" src="images/logo_jumbo.gif" alt="">
 
-							</p>
+							</div>
 
 						</div>
 
 					</form>
 
-				</div>	
-				
-			</div>	
+				</div>
 
+				</div>
+	<div class="push"></div>
 		</div>
-
 	</div>
-
-	</div>
-	
+		
 
 	<footer class="footer-fix container-fluid text-center">® Copyright PepsiCo 2013 - Todos los derechos reservados.</footer>
 
@@ -216,4 +222,4 @@
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 
 </body>
-</html>
+</hmtl>
