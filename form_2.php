@@ -57,7 +57,7 @@
 					<p style="font-size:21px">comprar Toddy pa’ la leche en</p>
 					<p>
 						
-						<img src="images/desta_tit.gif" alt="">,
+						<img src="images/desta_tit.gif" alt="" style="margin-top:3px;">
 
 					</p>
 					<p style="font-size:17px"> llenar este formulario y ya estarás</p>
