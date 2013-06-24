@@ -18,7 +18,7 @@
 	<link rel="stylesheet" href="css/internas.css">
 
 </head>
-<body>
+<body style="overflow:hidden">
 	<div class="container-fluid">
 		
 		<!--botonera toddy-->
@@ -57,7 +57,6 @@
 				<div style="clear:both;"></div>
 				<div class="baca">
 					
-					<img src="images/baca_toddy.gif" alt="">
 
 				</div>
 				

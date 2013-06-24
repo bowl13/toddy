@@ -130,6 +130,10 @@ body{
 .baca{
     position: absolute;
     z-index: 1;
+    background-image: url('../../images/baca_toddy.gif');
+    min-height: 786px;
+    height: auto;
+    width: 613px;
 }
 @media (max-width:640px){
     .baca img{
