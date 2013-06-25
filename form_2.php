@@ -8,21 +8,21 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>Toddy</title>
 	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width">
-
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" href="bootstrap-responsive.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" href="bootstrap/css/suiza_form.css">
 	<link rel="stylesheet" href="css/productos.css">
 	<link rel="stylesheet" href="css/internas.css">
+
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css">
 
 </head>
 <body>
 	<div class="container-fluid">
 		
 	<!--botonera toddy-->
-		<div id="botonera_int">
+		<div id="botonera_int" class="hidden-phone">
 			<div id="navegacion_int">
 				<div id="mover">
 					<a href="index.html">
@@ -39,11 +39,15 @@
 				</div>
 			</div>
 		</div>
+		<div class="hidden-desktop" style="background-image:url('images/top-int-trans.png');position:relative;z-index:99;background-repeat:repeat-x;height:80px;">
+			
+			<img border="0" src="images/logo-int-trans.png" style="filter:progid:DXImageTransform.Microsoft.AlphaImageLoader (src='imgaes/logo-int-trans',sizingMethod='scale');" />
 
-		<div class="row-fluid" style="margin-top:80px;">
+		</div>
+		<div class="row-fluid" id="cont-top">
 			<div class="span12 text-center">
 				
-				<img class="headers" src="images/tit_suiza.gif" alt="Gana un viaje Suiza">
+				<img class="headers" src="images/tit_suiza.gif" alt="Gana un viaje Suiza"/>
 
 			</div>
 			
@@ -51,24 +55,23 @@
 		<div class="row-fluid bg-w">
 		
 
-				<div class="span12 pull-left text-right fix-align" style="text-transform:uppercase;">
+				<div id="cont_text" class="span12 pull-right text-right fix-align">
 
-					<p style="font-size:19px">Suiza está muy cerca, sólo debes</p>
-					<p style="font-size:21px">comprar Toddy pa’ la leche en</p>
-					<p>
+					<p style="font-size:18px;">Suiza está muy cerca, sólo debes</p>
+					<p style="font-size:18px;">comprar Toddy pa’ la leche en</p>
+					<p style="font-size:18px;">
 						
-						<img src="images/desta_tit.gif" alt="" style="margin-top:3px;">
-
+						<img src="images/desta_tit.gif"/>,
+						llenar este
 					</p>
-					<p style="font-size:17px"> llenar este formulario y ya estarás</p>
-					<p style="font-size:24px;">participando por un viaje</p>
-					<p style="font-size:16px"> para 2 personas!</p>
+					<p style="font-size:18px;">formulario y ya estarás participando</p>
+					<p style="font-size:18px;"> por un viaje para 2 personas!</p>
 
 
 				</div>
 				<div class="span11 fix_phone" style="margin-top:-150px;">
 					
-					<img id="vaca" src="images/toddy_less.gif" alt="" style="margin-left:30px;">
+					<img id="vaca" src="images/toddy_less.gif" style="margin-left:30px;"/>
 
 					<div class="row-fluid cont-form2 text-left well-small">
 					
@@ -78,7 +81,7 @@
 							No seai pollo, revisa los campos en rojo.
 						</div>
 
-						<div class="cont1">
+						<div class="span6">
 
 											
 							<div class="control-group">											
@@ -163,7 +166,7 @@
 											
 						</div>
 
-						<div class="cont2">
+						<div class="span5">
 							
 							<div class="control-group">
 
@@ -181,8 +184,8 @@
 								<div class="controls">
 									
 									<input type="checkbox" class="check pull-left">
-									<label class="checkbox control-label pull-left">
-									Declaro ser mayor de 18 años y <a href="">acepto las bases de inscripción.</a>
+									<label class="checkbox control-label pull-left" style="font-size:10px !important;">
+									Declaro ser mayor de 18 años y acepto las <a style="color:#003333;" href="">bases de la promoción.</a>
 									</label>
 
 								</div>
@@ -197,10 +200,10 @@
 								
 							</div>
 
-							<p id="legal" style="max-width:270px;padding:15px 0;" class="pull-left">Promoción valida desde el 27 de Junio al 27 de Agosto del 2013. Bases en notaría Musalem.</p>
+							<p id="legal" style="max-width:250px;padding:15px 0;" class="pull-left">Promoción válida desde el 27 de Junio al 27 de Agosto del 2013. Bases en notaría Musalem.</p>
 							<div class="pull-left">
 								
-								<img style="margin-left:4px" src="images/logo_jumbo.gif" alt="">
+								<img style="margin-left:4px" src="images/logo_jumbo.gif"/>
 
 							</div>
 
@@ -222,4 +225,4 @@
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 
 </body>
-</hmtl>
+</html>
