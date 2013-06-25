@@ -1,4 +1,48 @@
 <!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<?php
+
+
+if(isset($_POST['inputnombre'])){
+   $hostname_cnx = "localhost:8889";
+   $database_cnx = "toddycl";
+   $username_cnx = "toddycl";
+   $password_cnx = "pepsico";
+
+   $cnx = mysql_pconnect($hostname_cnx, $username_cnx, $password_cnx) or trigger_error(mysql_error(),E_USER_ERROR);
+   mysql_select_db($database_cnx, $cnx);
+
+	$query = mysql_query("INSERT INTO toddy_suiza (`nombre` , 
+												`apellido` ,  
+												`rut` ,
+												`email`, 
+												`celular`,
+												`direccion` ,
+												`comuna` , 
+												`region` ,
+												`boleta` ,
+												`ip` 
+												) VALUES (
+												'".utf8_decode(ucwords(strtolower($_POST['inputnombre'])))."',
+												'".utf8_decode(ucwords(strtolower($_POST['inputApellido'])))."',
+												'".utf8_decode(strtolower($_POST['inputRut']))."',
+												'".utf8_decode(strtolower($_POST['inputEmail']))."',
+												'".utf8_decode(ucwords(strtolower($_POST['inputCelular'])))."',
+												'".utf8_decode(ucwords(strtolower($_POST['inputDirec'])))."',
+												'".utf8_decode(ucwords(strtolower($_POST['inputComuna'])))."',
+												'".utf8_decode(ucwords(strtolower($_POST['inputRegion'])))."',
+												'".utf8_decode(ucwords(strtolower($_POST['inputDato'])))."',
+												'".$_SERVER['REMOTE_ADDR']."')");
+	header( 'Location: form_exito.php' );
+
+}
+
+
+?>
+
 <html lang="en">
 <head>
 
@@ -71,7 +115,7 @@
 						
 						<div class="span11 form well-small">
 						
-							<form action="">
+							<form action="" id="formulario">
 							
 								<div class="error text-center well-small hide">
 									No seai pollo, revisa los campos en rojo.
@@ -81,84 +125,84 @@
 
 													
 									<div class="control-group">											
-									<label class="control-label pull-left" for="inputnombre">nombre</label>
-									<div class="controls">
-										<input type="text" id="inputEmail" placeholder="Toddy">
-										</div>
-
-									</div>
-									
-									<div class="control-group">
-
-										<label class="control-label pull-left" for="inputApellido">apellido</label>
+										<label class="control-label pull-left" for="inputNombre">nombre</label>
 										<div class="controls">
-											<input type="text" placeholder="Vacuno">
+											<input type="text" id="inputnombre" class="campo" name="inputNombre"  placeholder="Toddy">
+											</div>
+
 										</div>
 										
-									</div>
-									
-									<div class="control-group">
+										<div class="control-group">
 
-										<label class="control-label pull-left" for="inputRut">rut</label>
-										<div class="controls">
-											<input type="text" placeholder="Rut">
+											<label class="control-label pull-left" for="inputApellido">apellido</label>
+											<div class="controls">
+												<input type="text" id="inputApellido" class="campo" name="inputApellido" placeholder="Vacuno" >
+											</div>
+											
 										</div>
 										
-									</div>
-									
-									<div class="control-group">
+										<div class="control-group">
 
-										<label class="control-label pull-left" for="inputEmail">e-mail</label>
-										<div class="controls">
-											<input type="text" placeholder="Toddy@vacuno.cl">
+											<label class="control-label pull-left" for="inputRut">rut</label>
+											<div class="controls">
+												<input type="text" id="inputRut" class="campo" name="inputRut" placeholder="Rut" >
+											</div>
+											
 										</div>
 										
-									</div>
-									
-									<div class="control-group">
+										<div class="control-group">
 
-										<label class="contrl-label pull-left" for="inputCelular">celular</label>
-										<div class="controls">
-											<input type="text" placeholder="Celular">
+											<label class="control-label pull-left" for="inputEmail">e-mail</label>
+											<div class="controls">
+												<input type="text" id="inputEmail" class="campo" name="inputEmail" placeholder="Toddy@vacuno.cl" >
+											</div>
+											
 										</div>
 										
-									</div>
-									
-									<div class="control-group">
+										<div class="control-group">
 
-										<label class="control-label pull-left" for="inputDirec">direccion</label>
-										<div class="controls">
-											<input type="text" placeholder="Direccion">
+											<label class="contrl-label pull-left" for="inputCelular">celular</label>
+											<div class="controls">
+												<input type="text" id="inputCelular" class="campo" name="inputCelular" placeholder="Celular" >
+											</div>
+											
 										</div>
 										
-									</div>
-									
-									<div class="control-group">
+										<div class="control-group">
 
-										<label class="control-label pull-left" for="inputComuna">comuna</label>
-										<div class="controls">
-											<select>
-												
-												<option value="santiago">Santiago</option>
-
-											</select>
+											<label class="control-label pull-left" for="inputDirec">direccion</label>
+											<div class="controls">
+												<input type="text" id="inputDirec" class="campo" name="inputDirec" placeholder="Direccion">
+											</div>
+											
 										</div>
 										
-									</div>
-									
-										
-									<div class="control-group">
+										<div class="control-group">
 
-										<label class="control-label pull-left" for="inputRegion">region</label>
-										<div class="controls">
-											<select>
-												
-											<option value="metropilitana">RM</option>
+											<label class="control-label pull-left" for="inputComuna">comuna</label>
+											<div class="controls">
+												<select id="inputComuna" class="campo" name="inputComuna">
+													
+													<option value="santiago">Santiago</option>
 
-											</select>
+												</select>
+											</div>
+											
 										</div>
 										
-									</div>
+											
+										<div class="control-group">
+
+											<label class="control-label pull-left" for="inputRegion">region</label>
+											<div class="controls">
+												<select id="inputRegion" class="campo" name="inputRegion" >
+													
+								
+
+												</select>
+											</div>
+											
+										</div>
 													
 								</div>
 
@@ -166,42 +210,42 @@
 									
 									<div class="control-group">
 
-										<label class="control-label" for="inputDato">nº boleta</label>
-										<div class="controls">
-											<input type="text" placeholder="xxxxxx" style="height:45px;width:90%;" class="text-center">
+											<label class="control-label" for="inputDato">nº boleta</label>
+											<div class="controls">
+												<input type="text" id="inputDato" class="campo" name="inputDato" placeholder="xxxxxx" style="height:45px;width:90%;" class="text-center" >
+											</div>
+
 										</div>
 
-									</div>
+										<p style="margin-bottom:30px;margin-top:20px;">Términos y condiciones La información entregada es de uso exclusivo de Evercrisp S.A. Tus datos serán tratados de forma confidencial y bajo ningún motivo serán utilizados con fines ajenos a la promoción, ni entregados a terceros.</p>
+										
+										<div class="control-group" style="margin-bottom:30px">
 
-									<p style="margin-bottom:30px;margin-top:20px;">Términos y condiciones La información entregada es de uso exclusivo de Evercrisp S.A. Tus datos serán tratados de forma confidencial y bajo ningún motivo serán utilizados con fines ajenos a la promoción, ni entregados a terceros.</p>
-									
-									<div class="control-group" style="margin-bottom:30px">
+											<div class="controls">
+												
+												<input type="checkbox" id="mayor" class="campo" name="mayor" class="check pull-left" >
+												<label class="checkbox control-label pull-left">
+												Declaro ser mayor de 18 años y <a href="">acepto las bases de inscripción.</a>
+												</label>
 
-										<div class="controls">
+											</div>
 											
-											<input type="checkbox" class="check pull-left">
-											<label class="checkbox control-label pull-left" style="font-size:10px !important;">
-											Declaro ser mayor de 18 años y acepto las <a style="color:#003333;" href="">bases de la promoción.</a>
-											</label>
-
 										</div>
 										
-									</div>
-									
-									<div style="margin-bottom:30px" class="control-group text-center">
+										<div style="margin-bottom:30px" class="control-group text-center">
 
-										<div class="controls">
-											<input class="btn_parti" type="submit" value="participar">	
+											<div class="controls">
+												<input class="btn_parti" type="button" value="participar">	
+											</div>
+											
 										</div>
-										
-									</div>
 
-									<p id="legal" class="pull-left">Promoción válida desde el 27 de Junio al 27 de Agosto del 2013. Bases en notaría Musalem.</p>
-									<div class="pull-left">
-										
-										<img style="margin-left:4px" src="images/logo_jumbo.gif"/>
+										<p id="legal" class="pull-left">Promoción válida desde el 27 de Junio al 27 de Agosto del 2013. Bases en notaría Musalem.</p>
+										<div class="pull-left">
+											
+											<img style="margin-left:4px" src="images/logo_jumbo.gif"/>
 
-									</div>
+										</div>
 
 									<div class="clearfix"></div>
 
@@ -225,6 +269,7 @@
 	<footer class="footer-fix container-fluid text-center">® Copyright PepsiCo 2013 - Todos los derechos reservados.</footer>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/form.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
